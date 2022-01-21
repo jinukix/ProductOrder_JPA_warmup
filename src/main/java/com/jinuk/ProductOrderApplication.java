@@ -1,4 +1,4 @@
-package com.jinuk.ProductOrder;
+package com.jinuk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
