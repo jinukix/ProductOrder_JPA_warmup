@@ -1,0 +1,19 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-docker-container:3306/docker_mysql?allowPublicKeyRetrieval=true
+    username: root
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    locations:
+      - classpath:db/migration
+      - classpath:db/migration-seed
